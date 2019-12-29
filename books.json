@@ -1,0 +1,123 @@
+[
+  { 
+    "bookId":"it01",
+    "author": "Chinua Achebe",
+    "pages": 209,
+    "title": "Introduction to Information Technology",
+    "semester": "First",
+    "quantity": 50
+  },
+  {
+    "bookId":"tc01",
+ 	  "author": "Prateek Kc",
+    "pages": 209,
+    "title": "Thomas Calculus",
+    "semester": "First",
+    "quantity": 48
+  },
+  { 
+    "bookId":"itc01",
+  	"author": "Rajan Neupane",
+    "pages": 182,
+    "title": "Introduction to C prgoramming",
+    "semester": "First",
+    "quantity": 50
+  },
+  {
+    "bookId":"st01",
+  	"author": "Aakash Raj Dahal",
+    "pages": 300,
+    "title": "Statistics I",
+    "semester": "First",
+    "quantity": 50
+  },
+  {
+    "bookId":"dl01",
+  	"author": "Bije Paudel",
+    "pages": 382,
+    "title": "Digital Logic",
+    "semester": "First",
+    "quantity": 42
+  },
+  { 
+    "bookId":"oop02",
+  	"author": "Aavash Khadka",
+    "pages": 319,
+    "title": "Object Oriented Programming",
+    "semester": "Second",
+    "quantity": 50
+  },
+  {
+    "bookId":"dsc02",
+  	"author": "Samrat Bajgain",
+    "pages": 240,
+    "title": "Discrete Strutcure",
+    "semester": "Second",
+    "quantity": 50
+  },
+  {
+    "bookId":"tw02",
+  	"author": "Sameer Gharti Magar",
+    "pages": 280,
+    "title": "Technical Writing",
+    "year": 2000,
+    "semester": "Second",
+    "quantity": 48
+  },
+  {
+    "bookId":"la02",
+  	"author": "Sagar Humagain",
+    "pages": 320,
+    "title": "Linear Algebra",
+    "semester": "Second",
+    "quantity": 48
+  },
+  {
+    "bookId":"st202",
+  	"author": "Yogesh Bist",
+    "pages": 420,
+    "title": "Statistics II",
+    "semester": "Second",
+    "quantity": 50
+  },
+  {
+    "bookId":"dsa03",
+  	"author": "Kushal Rana",
+    "pages": 340,
+    "title": "Data Structures and Algorithm",
+    "semester": "Third",
+    "quantity": 50
+  },
+  {
+    "bookId":"cn03",
+  	"author": "Bije Paudel",
+    "pages": 440,
+    "title": "Introduction to Computer Network",
+    "semester": "Third",
+    "quantity": 50
+  },
+  {
+    "bookId":"wtc03",
+  	"author": "Aakash Raj Dahal",
+    "pages": 340,
+    "title": "Web Technology",
+    "semester": "Third",
+    "quantity": 48
+  },
+  {
+    "bookId":"dba03",
+  	"author": "Rajan Neupane",
+    "pages": 320,
+    "title": "Relational Database",
+    "semester": "Third",
+    "quantity": 50
+  },
+  {
+    "bookId":"ntc03",
+  	"author": "Rabi Gautam",
+    "pages": 380,
+    "title": "Net Centric",
+    "semester": "Third",
+    "quantity": 48
+  }
+]

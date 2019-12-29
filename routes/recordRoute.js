@@ -1,0 +1,19 @@
+const express = require('express');
+const router = express.Router();
+const Record = require('./../models/recordModel');
+const recordController =  require('./../controllers/recordController');
+
+
+router
+    .route('/')
+    .get(recordController.getAllRecords)
+    .post(recordController.createRecord);
+
+
+router
+    .route('/:id')
+    .get(recordController.getOneRecord)
+    .patch(recordController.updateRecord)
+    .delete(recordController.deleteRecord);
+
+module.exports = router;

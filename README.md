@@ -21,4 +21,7 @@ Mongodb must be installed. Visit https://www.mongodb.com/download-center/communi
 
 ```
 Mongodb server must be running on your PC while trying to run the application.
+<<<<<<< HEAD
+
 ```
+

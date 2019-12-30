@@ -16,4 +16,9 @@ router
     .patch(recordController.updateRecord)
     .delete(recordController.deleteRecord);
 
+//route for returning borrowed books
+
+router
+    .route('/return/:id')
+    .post(recordController.returnBook);
 module.exports = router;

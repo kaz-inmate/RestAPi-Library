@@ -7,14 +7,16 @@ const bookController =  require('./../controllers/bookController');
 
 
 router
-    .get('/',bookController.getAllBooks)
-    .post('/',bookController.addBooks);
+    .route('/')
+    .get(bookController.getAllBooks)
+    .post(bookController.addBooks);
 
 
 router
-    .get('/:id',bookController.getOneBook)
-    .patch('/:id',bookController.updateBook)
-    .delete('/:id',bookController.deleteBook);
+    .route('/:id')
+    .get(bookController.getOneBook)
+    .patch(bookController.updateBook)
+    .delete(bookController.deleteBook);
 
 
 module.exports = router;

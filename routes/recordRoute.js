@@ -21,4 +21,8 @@ router
 router
     .route('/return/:id')
     .post(recordController.returnBook);
+
+router
+    .route('/renew/:id')
+    .post(recordController.renewBook);
 module.exports = router;

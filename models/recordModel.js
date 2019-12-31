@@ -14,7 +14,7 @@ const recordSchema = new mongoose.Schema({
         type: String,
         required: [true, 'A book id must be specified']
     },
-    issued_data: {
+    issued_date: {
         type: Date,
         default: Date.now()
     },
@@ -22,6 +22,7 @@ const recordSchema = new mongoose.Schema({
         type: Date,
         default: Date.now() + 30*24*60*60*1000
     },
+    renewed_date: [{type:Date}],
     status: {
         type: String,
         default: "Borrowed"

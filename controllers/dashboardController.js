@@ -36,7 +36,7 @@ exports.getInfo = async (req, res) => {
 exports.last30days = async (req, res) => {
     try {
         const last30Days = await Record.find(
-            {"issued_data": { $gte: new Date((new Date().getTime() - (30 * 24 * 60 * 60 * 1000)))}});
+            {"issued_date": { $gte: new Date((new Date().getTime() - (1* 24 * 60 * 60 * 1000)))}});
 
             res.status(200).json({
                 status: 'success',
@@ -53,3 +53,25 @@ exports.last30days = async (req, res) => {
         });
     }
 }
+
+// exports.nearDeadline = async (req, res) => {
+//     try {
+//         const nearDeadline = await Record.find(
+//             {"deadline": { $gte: new Date((new Date().getTime() - (7 * 24 * 60 * 60 * 1000)))}});
+
+//             res.status(200).json({
+//                 status: 'success',
+//                 result: last30Days.length,
+//                 data: {
+//                     last30Days
+//                 }
+//             });
+        
+//     } catch (err) {
+//         res.status(400).json({
+//             status: 'failed',
+//             message: err
+//         });
+//     }
+// }
+

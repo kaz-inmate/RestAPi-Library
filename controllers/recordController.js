@@ -100,7 +100,7 @@ exports.deleteRecord = async (req, res) => {
     }
 };
 
-
+//------------------- Return borrowed book and update the book quantity in stock --------------------
 exports.returnBook = async (req, res) => {
     try {
         const record = await Record.findByIdAndUpdate(req.params.id, {$set: { status: "Returned"}});
@@ -115,9 +115,34 @@ exports.returnBook = async (req, res) => {
         console.log(`Updated book quantity`);
     } catch (err) {
         res.status(400).json({
+            status: 'failed', 
+            message: err
+        });
+    }
+};
+
+
+//----------------------- Renew book and add renewed data and update deadline-----------------
+
+exports.renewBook = async (req, res) => {
+    try {
+        const record = await Record.findByIdAndUpdate(req.params.id, 
+            {$set: { renewed_date: [Date.now()], deadline: Date.now() + 30*24*60*60*1000 }
+        });
+        res.status(200).json({
+            status: 'success',
+            data: {
+                record
+            }
+        });
+        
+    } catch (error) {
+        res.status(400).json({
             status: 'failed',
             message: err
         });
     }
-}
+};
+
+
 
